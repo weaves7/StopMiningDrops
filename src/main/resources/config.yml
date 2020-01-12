@@ -1,0 +1,20 @@
+
+#Hi! Thanks for using Weaves' plugin.
+
+#Blocks drops and xp from mined blocks in a list of worlds.
+#Should work with any block in the Material Enum found here:
+#https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
+enabled: false
+blocks:
+  - iron_ore
+  - gold_ore
+  - diamond_ore
+  - emerald_ore
+  - coal_ore
+  - lapis_ore
+  - redstone_ore
+  - nether_quartz_ore
+worlds:
+  - world
+  - world_nether
+  - world_end

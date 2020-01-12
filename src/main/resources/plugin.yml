@@ -1,0 +1,19 @@
+main: org.makershaven.stopminingdrops.StopMiningDrops
+api-version: "1.15"
+version: "${project.version}"
+name: "StopMiningDrops"
+author: "Weaves"
+softdepend: [Multiverse-Core]
+description: "Prevents certain blocks in certain worlds from dropping items and xp when mined"
+commands:
+  stopminingdrops:
+    aliases: smd
+    description: StopMingingDrops main command!
+    permission: stopminingdrops.command
+    permission-message: You do not have permission to use this command.
+    usage: /<command> [reload|version]
+permissions:
+  stopminingdrops.command:
+    description: Allows StopMingingDrops command
+    default: op
+
