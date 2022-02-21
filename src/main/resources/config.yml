@@ -1,7 +1,7 @@
 
 #Hi! Thanks for using Weaves' plugin.
 
-#Blocks drops and xp from mined blocks in a list of worlds.
+#Block drops and xp from mined blocks in a list of worlds.
 #Should work with any block in the Material Enum found here:
 #https://hub.spigotmc.org/javadocs/spigot/org/bukkit/Material.html
 enabled: false
@@ -18,3 +18,11 @@ worlds:
   - world
   - world_nether
   - world_end
+
+#Block the contents of a container from dropping when broken by a player, in a list of worlds.
+block-container-drops:
+  enabled: false
+  worlds:
+    - creative
+
+enable-metrics: true

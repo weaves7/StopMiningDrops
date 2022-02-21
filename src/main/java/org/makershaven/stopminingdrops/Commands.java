@@ -13,8 +13,8 @@ import java.util.List;
 
 public class Commands implements CommandExecutor, TabCompleter {
 
-    private Plugin plugin;
-    private BlockBreakListener blockBreakListener;
+    private final Plugin plugin;
+    private final BlockBreakListener blockBreakListener;
 
     Commands (Plugin plugin, BlockBreakListener blockBreakListener){
         this.plugin = plugin;
@@ -32,7 +32,9 @@ public class Commands implements CommandExecutor, TabCompleter {
                     plugin.reloadConfig();
                     blockBreakListener.setBlockedDrops(plugin);
                     blockBreakListener.setWorlds(plugin);
+                    blockBreakListener.setContainerWorlds(plugin);
                     blockBreakListener.updateEnabled(plugin);
+                    blockBreakListener.updateBlockingContainerDrops(plugin);
                     commandSender.sendMessage(ChatColor.GREEN+ "StopMiningDrops has reloaded the config.");
                     break;
 
